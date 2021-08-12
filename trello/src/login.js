@@ -1,0 +1,1 @@
+const login = { template:<h1>login</h1>}

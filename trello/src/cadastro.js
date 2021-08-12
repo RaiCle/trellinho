@@ -1,0 +1,1 @@
+const cadastro = { template: <h1>cadastro</h1> }

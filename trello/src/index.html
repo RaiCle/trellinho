@@ -1,0 +1,74 @@
+<html1>
+    <head>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+        <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+
+    </head>
+    <body>
+
+        <div id="app" class="container">
+            <h3 class="d-flex justify-content-center">
+                Trellinho
+            </h3>
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item m1">
+                        <router-link class="btn" to="/home">Home</router-link>
+                    </li>
+
+                    <li class="nav-item m1">
+                        <router-link class="btn" to="/login">Login</router-link>
+                    </li>
+
+                    <li class="nav-item m1">
+                        <router-link class="bnt" to="/cadastro">Cadastro</router-link>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <router-view></router-view>
+
+
+        </div>
+
+        <div class="container" id="text">
+            <p><input type="text" v-model="msg" placeholder="Coluna"</p>
+            <p><input type="text" v-model="msg1" placeholder="Cartão"</p>
+            <p><textarea v-model="mensagem" rows="4" cols="40" placeholder="Descrição"></textarea></p>
+
+
+
+        </div>
+
+        <script type="text/javascript">
+            var text = new Vue({
+                el: "#text",
+                data: {
+                    msg: '',
+                    msg1: '',
+                    mensagem: ''
+                }
+            });
+        </script>
+
+
+
+
+        <script src="ApiUrl.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+        <script src="login.js"></script>
+        <script src="cadastro.js"></script>
+        <script src="home.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+    </body>
+</html1>
